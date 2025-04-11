@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Posts</title>
+    <link rel="stylesheet" href="/src/dist/styles.css">
+</head>
+<body id="posts">
+    <div class="container">
+        <header>
+            <h1>Create and View Posts</h1>
+        </header>
+
+        <!-- Post Creation Form -->
+        <div class="form-container">
+            <h2>Create a Post</h2>
+            <form id="postForm" enctype="multipart/form-data">
+                <textarea id="postText" placeholder="Enter your text..."></textarea>
+                <input type="file" id="postImage" name="image" accept="image/*" required>
+                <input type="date" id="postDate" required>
+                <select id="postCategory" required>
+                    <option value="future">Future/Plans</option>
+                    <option value="past">Past/Memories</option>
+                </select>
+                <button type="submit">Create Post</button>
+            </form>
+            
+        </div>
+
+        <!-- Display Posts -->
+        <div id="postsContainer" class="posts-container">
+            <div id="futurePosts">
+                <h3>Future/Plans</h3>
+                <div class="posts-list" id="futurePostsList"></div>
+            </div>
+            <div id="pastPosts">
+                <h3>Past/Memories</h3>
+                <div class="posts-list" id="pastPostsList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/plan.js"></script>
+</body>
+</html>

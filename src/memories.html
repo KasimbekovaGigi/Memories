@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish</title>
+    <link rel="stylesheet" href="/src/dist/styles.css">
+    <!-- Link to Google Fonts -->
+    <link href="/src/assests/fonts/Raleway-Medium.ttf" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body id="main">
+    
+    <header class="breadcrumbs">
+        <div class="breadcrumbs__container">
+            <a href="#" class="breadcrumbs__logo">
+                <img src="../src/assests/logo.png" alt="logo">
+            </a>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+    
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <nav class="breadcrumbs__nav">
+                <ul class="breadcrumbs__nav-list">
+                    <li class="has-submenu">
+                        <a href="#perks">Why NeverNote</a>
+                        <ul class="submenu">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#footer">Support</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Search Section -->
+            <div class="breadcrumbs__search">
+                <input 
+                    type="text" 
+                    class="search__input" 
+                    placeholder="Search..." 
+                    id="search-input"
+                >
+                <button class="search__btn">Search</button>
+                <div id="suggestions-list" class="suggestions"></div> <!-- Suggestions container -->
+            </div>
+    
+            <div class="header__login">
+                <a href="/src/login.html" class="btn">Log In</a>
+                <a href="/src/login.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+    
+
+        <!-- Main Sections -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero__section">
+                <div class="hero__section-container">
+                    <div class="hero__content">
+                        <h1> <strong> Write, reflect, and grow.</strong></h1>
+                        <p>Remember everything and tackle any project with your notes, tasks, and schedule all in one
+                            place.</p>
+                        <a href="login.html" class="btn btn-primary">Get Nevernote Free</a>
+                    </div>
+                </div>
+                <video class="hero__bg" autoplay loop muted>
+                    <source src="./assests/hero.mp4">
+                </video>
+            </section>
+
+            <!-- Access to notes, todo adn posts Sections -->
+            <div class="carousel" id="blogs">
+                <div class="carousel__track">
+                    <div class="carousel__item">
+                        <a href="plan.html">
+                            <img src="/src/assests/docs.jpg" alt="Representation of notes" />
+                        </a>
+                        <p class="carousel__description">Organize your notes efficiently</p>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="task.html">
+                            <img src="/src/assests/list.jpg" alt="Representation of list notes" />
+                        </a>
+                        <p class="carousel__description">Keep track of your to-do lists</p>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="text.html">
+                            <img src="/src/assests/planner.jpg" alt="Representation of planner" />
+                        </a>
+                        <p class="carousel__description">Plan your schedule effortlessly</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Perks Section -->
+            <section class="perks" id="perks">
+                <div class="perks__container">
+                    <div class="perks__container-grid">
+                        <div class="perk">
+                            <img src="../src/assests/location.png" alt="Access anywhere icon" />
+                            <h4>Access Anywhere</h4>
+                            <p>Your memories and plans, always within reach—sync seamlessly across all your devices for
+                                ultimate convenience.</p>
+                        </div>
+                        <div class="perk">
+                            <img src="../src/assests/pin.png" alt="Capture Life’s Moments icon" />
+                            <h4>Capture Life’s Moments</h4>
+                            <p>Turn your thoughts into vibrant posts by adding photos, text, and even documents.
+                                Preserve the past and plan the future effortlessly.</p>
+                        </div>
+                        <div class="perk">
+                            <img src="../src/assests/check.png" alt="Organize with Ease icon" />
+                            <h4>Organize with Ease</h4>
+                            <p>Bring clarity to your schedule by categorizing posts into plans and memories. See your
+                                journey unfold, one day at a time.</p>
+                        </div>
+                        <div class="perk">
+                            <img src="../src/assests/buble.png" alt="Find Inspiration Fast icon" />
+                            <h4>Find Inspiration Fast</h4>
+                            <p>Quickly locate any post with intelligent search tools that bring your ideas and memories
+                                to life in seconds.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="container">
+                    <h3>What People Are Saying</h3>
+                    <p>"Nevernote is a powerful tool that helps executives, entrepreneurs, and creatives capture and
+                        arrange their ideas. Just use it."</p>
+                </div>
+            </section>
+            <!-- Blog Section -->
+            <article class="blog__post">
+                <div class="container">
+                    <div class="blog__post-content">
+                        <img src="/src/assests/news.png" alt="News image" />
+                        <div class="blog__post-text">
+                            <h6>What's New</h6>
+                            <h2>Thirty More Exciting Improvements in Evernote</h2>
+                            <p>Product lead Aziza Kasimbekova shares how the team introduced drastic <br>improvements to
+                                Nevernote’s
+                                Editor, Calendar, Tasks, Mobile experience, and more.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- Split Section -->
+            <section class="split__content">
+                <div class="container">
+                    <div class="split">
+                        <div class="text__content">
+                            <h2>Your information, your way</h2>
+                            <p>Take control of your notes and ideas by capturing more than just text.
+                                Save important files, documents, and images all in one place, ensuring
+                                your information is always organized and accessible when you need it.</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="../src/assests/skatches.png" alt="Sketch representation" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Feature Section -->
+            <section class="feature-section">
+                <div class="container">
+                    <div class="feature-content reverse">
+                        <div class="text-content">
+                            <h2>24/7 access</h2>
+                            <p>Evernote automatically syncs across all your devices so you can access your most
+                                important information anytime, anywhere. No WiFi? No problem—offline mode lets you keep
+                                working even when the internet cuts out.</p>
+
+                        </div>
+                        <div class="image-content">
+
+                            <video autoplay muted loop>
+                                <source src="../src/assests/on.gif.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feature-section">
+                <div class="container">
+                    <div class="feature-content">
+                        <div class="text-content">
+                            <h2>Instant recall</h2>
+                            <p> Find the information you need quickly and easily.
+                                Search through PDFs, documents, and images with powerful and reliable search tools
+                                designed for convenience.</p>
+
+                        </div>
+                        <div class="image-content">
+                            <img src="../src/assests/brat.png" alt="Advanced search illustration">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feature-section">
+                <div class="container">
+                    <div class="feature-content reverse">
+                        <div class="text-content">
+                            <h2>Effortless collaboration</h2>
+                            <p>Collaborate on projects seamlessly with Evernote. Real-Time Editing syncs changes
+                                instantly, the Tasks feature outlines next steps and assigns responsibilities, and
+                                unlimited sharing permissions keep everyone on the same page.</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="../src/assests/convert.png" alt="Teamwork illustration">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="gallery">
+    <div class="gallery__controls">
+        <label for="filter">Filter:</label>
+        <select id="filter" style="border: 1px solid pink; border-radius: 20px;">
+            <option value="all">All</option>
+            <option value="take-notes">Take Notes</option>
+            <option value="write-wishes">Write Wishes</option>
+        </select>
+        
+        <label for="sort">Sort By:</label>
+        <select id="sort" style="border: 1px solid pink; border-radius: 20px;">
+            <option value="name">Name</option>
+            <option value="date">Date</option>
+        </select>
+    </div>
+
+    <div class="gallery__container" id="gallery-container">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+
+    <div class="pagination">
+        <button class="pagination__btn" id="prev-btn" disabled>Previous</button>
+        <div class="pagination__numbers" id="pagination-numbers">
+            <!-- Page numbers will be dynamically added here -->
+
+        </div>
+        <button class="pagination__btn" id="next-btn">Next</button>
+    </div>
+</section>
+
+            
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Company Section -->
+                    <div class="footer__col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="footer__col">
+                        <h4>contact us</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-phone-alt"></i> +123 456 789</li>
+                            <li><i class="fas fa-envelope"></i> support@example.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media Section -->
+                    <div class="footer__col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="row">
+                    <div class="footer__col map-section">
+                        <h4>our location</h4>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.063669369979!2d144.95605401533495!3d-37.81720997975102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47f4ee4eab%3A0x5045675218ce7e0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1574696780833!5m2!1sen!2sau"
+                                width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+</body>
+
+<script src="/src/js/memories.js"></script>
+
+</html>

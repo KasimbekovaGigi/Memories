@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Notes (Заметки)</title>
+    <link rel="stylesheet" href="/src/dist/styles.css">
+</head>
+<body id="texts">
+    <div class="container">
+        <header>
+            <h1>Text Notes (Заметки)</h1>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Form Section -->
+            <div class="form-container">
+                <h2>Create a Note</h2>
+                <form id="noteForm">
+                    <textarea id="noteText" placeholder="Write your note..." required></textarea>
+                    <input type="datetime-local" id="noteDate" required>
+                    <button type="submit">Submit Note</button>
+                </form>
+            </div>
+
+            <!-- Notes Section -->
+            <div id="notesContainer" class="notes-container">
+                <h3>All Notes</h3>
+                <div class="notes-list" id="notesList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/text.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "postinstall": "cd ./test && npm i || true",
+    "test": "jest --verbose",
+    "build": "echo \"Dummy build script for Autocode\"",
+    "lint:js": "eslint src/js/**/*.js",
+    "lint:css": "stylelint src/dist/styles.css",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:fix": "eslint src/js/**/*.js --fix && stylelint src/dist/styles.css --fix"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "cors": "^2.8.5",
+    "font-awesome": "^4.7.0",
+    "jsdom": "^25.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.17.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "stylelint": "^16.12.0",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "name": "final-project",
+  "version": "1.0.0",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "https://autocode.git.epam.com/aziza_kasimbekova/final-project-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

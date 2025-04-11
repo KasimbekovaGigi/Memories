@@ -1,0 +1,29 @@
+@import 'base';
+@import 'login';
+@import 'main';
+@import 'media';
+@import 'notes';
+@import 'posts';
+@import 'todo';
+
+
+
+
+
+
+@keyframes gradient-slide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+@keyframes gradient-slide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
